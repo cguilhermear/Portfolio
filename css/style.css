@@ -1,0 +1,362 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+      background-color: black;
+      height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    
+}
+
+h2.titulo span{
+     color: #0addec;
+    font-size: 38px;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #2013d39f;
+    transform: scale(1.05);
+    
+}
+
+
+/* ESTILO DO CABEÇALHO */ 
+
+header{
+    padding: 20px 4%;
+
+}
+
+header> .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-family: 'Pixelify Sans', sans-serif;    
+    font-size: 28px;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* ESTILO TOPO DO SITE */ 
+
+section.topo-do-site{
+    padding: 10px 4%;
+    margin-top: 70px;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    gap: 10px;
+}
+
+.topo-do-site h1{
+    color: #0addec;
+    font-size: 38px;
+    line-height: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ffffff;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    margin: 10px 0;
+    margin-top: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+   
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */ 
+
+section.especialidades{
+    padding: 40px 4%;
+    margin-top: 70px    ;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades h2.titulo {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.especialidades .especialidades-box{
+    color: #09d4e2;
+    background-color: #4b4b4bd2;
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-top: 40px;
+    font-family: 'Noto Serif', serif;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0addec;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 40px;
+    color: #fff;
+    
+}
+
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 0px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    padding: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.sobre .txt-sobre h2 span{
+    color: #0addec;
+    display: block;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:#0addec ;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */ 
+
+section.portfolio{
+   padding: 80px 4%; 
+   box-shadow: 0 0 40px 10px #ffffff2c;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.portfolio h2.titulo {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #0addec5b;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color:#0addec;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff2c;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .linefooter{
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /* clasesse gerais */
+    .flex {
+        flex-direction: column-reverse;
+        
+    }
+
+    h2.titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2.titulo span {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* cabeçalho */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* topo do site */
+    section.topo-do-site .flex {
+        gap: 30px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 28px;
+    }
+
+    .topo-do-site h2 {
+        font-size: 28px;
+    }
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+
+    section.especialidades {
+        padding: 20px 8%;
+
+    }
+
+}
