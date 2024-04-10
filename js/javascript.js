@@ -17,7 +17,7 @@ const handleSubmit = async (event) => {
 
     // Verificar se o envio foi bem-sucedido (código de status 2xx)
     if (response.ok) {
-        console.log('Envio bem-sucedido!');
+        alert('Envio bem-sucedido!');
         
         // Limpar os campos do formulário
         document.querySelector('input[name=name]').value = '';

@@ -359,4 +359,17 @@ footer .linefooter{
 
     }
 
+        /* ESTILO DAS ESPECIALIDADES */
+
+
+
 }
+
+ ::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Raio da borda da barra de rolagem */
+  }
